@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -150,6 +149,46 @@
             line-height: 1.6;
         }
 
+        /* Seção Certificados */
+        .certificados-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .certificado-item {
+            flex: 1;
+            min-width: 300px;
+            max-width: 450px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .certificado-imagem {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .certificado-descricao {
+            padding: 20px;
+        }
+
+        .certificado-descricao h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .certificado-descricao p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
         @media (max-width: 768px) {
             .conteudo-principal {
                 flex-direction: column;
@@ -163,6 +202,10 @@
 
             .categorias-container {
                 flex-direction: column;
+            }
+            
+            .certificado-item {
+                min-width: 100%;
             }
         }
     </style>
@@ -247,9 +290,34 @@
      <div class="secao-colorida">
         <div class="conteudo-secao">
             <h2>Certificados</h2>
-            <img src="fotos/ciclo de vida do processo de ciência de dados_page-0001.JPG" alt="certificado" style="width: 100%; max-width: 600px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-            <img src="fotos/projetar uma solução de aprendizado de maquina aula3_page-0001 (1).jpg" alt="certificado" style="width: 100%; max-width: 600px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-            <img src="fotos/EF SET Certificate_page-0001.JPG" alt="certificado" style="width: 100%; max-width: 600px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+            
+            <div class="certificados-container">
+                <div class="certificado-item">
+                    <img src="fotos/ciclo de vida do processo de ciência de dados_page-0001.JPG" alt="Certificado de Ciência de Dados" class="certificado-imagem">
+                    <div class="certificado-descricao">
+                        <h3>Ciclo de Vida do Processo de Ciência de Dados</h3>
+                        <p>Certificado obtido através da conclusão do curso sobre o ciclo de vida completo de projetos de ciência de dados, desde a coleta e preparação dos dados até a implementação de modelos preditivos.</p>
+                    </div>
+                </div>
+                
+                <div class="certificado-item">
+                    <img src="fotos/projetar uma solução de aprendizado de maquina aula3_page-0001 (1).jpg" alt="Certificado de Aprendizado de Máquina" class="certificado-imagem">
+                    <div class="certificado-descricao">
+                        <h3>Projetar uma Solução de Aprendizado de Máquina</h3>
+                        <p>Certificado obtido após concluir o módulo sobre o desenvolvimento de soluções de machine learning, abordando desde a definição do problema até a avaliação de modelos.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certificados-container">
+                <div class="certificado-item">
+                    <img src="fotos/EF SET Certificate_page-0001.JPG" alt="Certificado de Proficiência em Inglês" class="certificado-imagem">
+                    <div class="certificado-descricao">
+                        <h3>EF SET English Certificate</h3>
+                        <p>Certificado de proficiência em inglês obtido através do EF Standard English Test, reconhecido internacionalmente como uma avaliação precisa das habilidades de leitura e compreensão auditiva em inglês.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
